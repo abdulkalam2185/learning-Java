@@ -7,11 +7,9 @@ public class learningJava{
 		Scanner sc = new Scanner(System.in);
 
 		int number = sc.nextInt();
-		int sum = 0;	
-		for (int i= 1; i <= number; i++) {
-			sum = sum + i;
-			
+		
+		for (int i =1; i < 11; i++) {
+			System.out.println(number * i);
 		}
-		System.out.println(sum);
 	}
 } 
