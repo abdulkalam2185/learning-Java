@@ -6,10 +6,30 @@ public class learningJava{
 		
 		Scanner sc = new Scanner(System.in);
 
-		double radius = sc.nextDouble();
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		String operation = sc.next();
 
-		double area = 3.14 * radius * radius;
-		System.out.print(area);
+		switch(operation){
+		case "Addition":
+			System.out.print(a + b);
+			break;
+		case "Subtraction":
+			System.out.print(a - b);
+			break;
+		case "Multiplication":
+			System.out.print(a * b);
+			break;
+		case "Division":
+			System.out.print(a / b);
+			break;
+		case "Modulo":
+			System.out.print(a % b);
+			break;
+		default:
+			System.out.print("Invalid operation");
+			break;
+		}
 		
 
 	}
