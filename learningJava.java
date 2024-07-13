@@ -1,15 +1,16 @@
-import java.util.*;
+import java.util.*;	
 
 public class learningJava{
 
 	public static void main(String[] args) {
 
-		Scanner sc = new Scanner(System.in);
-
-		int number = sc.nextInt();
+		int n = 19;
 		
-		for (int i =1; i < 11; i++) {
-			System.out.println(number * i);
+		for (int i=0; i<n; i++) {
+			if (i%2 == 0) {
+				System.out.println("n is even " + i);
+			}
 		}
+		
 	}
 } 
